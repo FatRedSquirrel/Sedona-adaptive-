@@ -59,12 +59,21 @@
    outline: none;
 }
 
+html {
+   min-height: 100%;
+}
 
 body {
    font-family: "PT Sans", sans-serif;
    margin: 0;
    color: #000;
    position: relative;
+   display: flex;
+   min-height: 100%;
+}
+
+.main {
+   flex-grow: 1;
 }
 
 ul {
