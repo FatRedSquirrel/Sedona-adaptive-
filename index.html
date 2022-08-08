@@ -58,6 +58,20 @@
                </ul>
                <button class="button header-button" type="button">Хочу сюда!</button>
                <a class="header-phone" href="#">+7 (812) 812-12-12</a>
+               <ul class="nav-list nav-social-list">
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">ВКонтакте</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Телеграм</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Ютуб</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link nav-phone" href="#">+7 (812) 812-12-12</a>
+                  </li>
+               </ul>
             </div>
          </nav>
       </header>
@@ -242,6 +256,81 @@
       </footer>
       <!-- / FOOTER -->
 
+   </div>
+   <div class="modal-container">
+      <form class="modal">
+         <button class="modal-close" type="button">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path
+                  d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" />
+            </svg>
+         </button>
+         <h2 class="section-title modal-title">Поиск гостиницы в Седоне</h2>
+         <div class="modal-group">
+            <h3 class="modal-group-title">Дата Заезда:</h3>
+            <div class="modal-group-col">
+               <input type="date" class="modal-input">
+               <span class="modal-input-message"></span>
+               <!-- сделай js'ом чтобы если выбрана дата меньше нынешней, данное поле заполнялось соответствующим сообщением и становилось красным
+               также по фану выбери дату до которой якобы все занято и если выбирать даты до нее, то будет сообщение типа "на данную дату нет свободных номеров"
+                  если же выбрана дата не из прошлого и не раньше той условленной, то будет сообщение "На эти даты есть свободные номера. Пока есть." если реализуешь - будет круто 
+                  хотя конечно слишком много времени на это тратить не надо, надо начинать зарабатывать на верстке, так что можно этим по вечерам заниматься или например отводить на поиск решения час в конце учебного дня, ибо начало заработка на верстке сейчас в приоритете-->
+            </div>
+         </div>
+         <div class="modal-group">
+            <h3 class="modal-group-title">Дата Выезда:</h3>
+            <div class="modal-group-col">
+               <input type="date" class="modal-input">
+               <span class="modal-input-message"></span>
+            </div>
+         </div>
+         <div class="modal-people-amount">
+            <div class="modal-group">
+               <h3 class="modal-group-title">Взрослые:</h3>
+               <div class="people-amount-input-container">
+                  <input type="number" class="modal-input people-amount-input people-amount-input-1">
+                  <button class="amount-button amount-minus amount-minus-1" type="button">
+                     <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0L0 1L13 1V0L0 0Z" />
+                     </svg>
+                  </button>
+                  <button class="amount-button amount-plus amount-plus-1" type="button">
+                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+                     </svg>
+                  </button>
+               </div>
+            </div>
+            <div class="modal-group">
+               <div class="tooltip-container">
+                  <h3 class="modal-group-title">Дети:</h3>
+                  <div class="tooltip">
+                     <div class="tooltip-text">
+                        Укажите количество детей, которые будут с вами, возраст которых от 6 до
+                        18
+                        лет.
+                        Дети до 6 лет размещаются бесплатно.
+                     </div>
+                  </div>
+               </div>
+               <div class="people-amount-input-container">
+                  <input type="number" class="modal-input people-amount-input people-amount-input-2">
+                  <button class="amount-button amount-minus amount-minus-2" type="button">
+                     <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0L0 1L13 1V0L0 0Z" />
+                     </svg>
+                  </button>
+                  <button class="amount-button amount-plus amount-plus-2" type="button">
+                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+                     </svg>
+                  </button>
+               </div>
+            </div>
+         </div>
+         <button class="button modal-button" type="submit">Найти</button>
+         <button class="button modal-close-bottom" type="button">Закрыть</button>
+      </form>
    </div>
    <script src="script.js"></script>
 </body>
