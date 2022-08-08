@@ -1287,7 +1287,7 @@ input[type=number] {
 /* MODAL */
 .modal-container {
    z-index: 10000;
-   position: fixed;
+   position: absolute;
    left: 0;
    top: 0;
    bottom: 0;
@@ -1302,6 +1302,7 @@ input[type=number] {
    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
    border-radius: 30px;
    margin: auto;
+   margin-top: 30px;
    padding: 70px;
    position: relative;
 }
@@ -1415,8 +1416,8 @@ input[type=number] {
 
 .amount-button {
    position: absolute;
-   width: 25px;
-   height: 25px;
+   width: 40px;
+   height: 50px;
    top: 50%;
    transform: translateY(-50%);
    display: flex;
@@ -1440,11 +1441,11 @@ input[type=number] {
 }
 
 .amount-minus {
-   left: 10px;
+   left: 0;
 }
 
 .amount-plus {
-   right: 10px;
+   right: 0;
 }
 
 .tooltip-container {
@@ -1803,12 +1804,8 @@ input[type=number] {
       width: 100%;
    }
 
-   .amount-minus {
-      left: 20px;
-   }
-
-   .amount-plus {
-      right: 20px;
+   .amount-button {
+      width: 100px;
    }
 
    .hero {
